@@ -2,7 +2,7 @@
 /**
  * main - Entry point of the program
  *
- * Description: This program prints a sentence with proper grammar.
+ * Description: This function prints a sentence with proper grammar.
  *              The outcome is a piece of art.
  *
  * Return: Always 0 (Success)
