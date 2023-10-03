@@ -6,9 +6,8 @@ include <stdio.h>
  * @argc: number of arguments
  * @argv: array of arguments
  *
- * Return: Always 0 (Success)
+ * Return: Always 0 (Succes
  */
-
 int main(int argc, char *argv[])
 {
 (void) argv; /*Ignore argv*/

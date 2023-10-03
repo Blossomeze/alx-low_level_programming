@@ -8,35 +8,35 @@
  *
  * Return: Always 0
  */
-int is_digit_string(const char *str) {
-    while (*str) {
-        if (!isdigit(*str)) {
-            return 0;
-        }
-        str++;
-    }
-    return 1;
-}
+int main(int argc, char *argv[])
+{
+	int num, j, result;
+	int coins[] = {25, 10, 5, 2, 1};
 
-int main(int argc, char *argv[]) {
-    if (argc < 2) {
-        printf("Usage: %s <number1> <number2> ... <numberN>\n", argv[0]);
-        return 1;
-    }
+	if (argc != 2)
+	{
+		printf("Error\n");
+		return (1);
+	}
 
-    int sum = 0;
+	num = atoi(argv[1]);
+	result = 0;
 
-    for (int i = 1; i < argc; i++) {
-        if (is_digit_string(argv[i])) {
-            int num = atoi(argv[i]);
-            sum += num;
-        } else {
-            printf("Error: '%s' is not a valid number.\n", argv[i]);
-            return 1;
-        }
-    }
+	if (num < 0)
+	{
+		printf("0\n");
+		return (0);
+	}
 
-    printf("Sum: %d\n", sum);
+	for (j = 0; j < 5 && num >= 0; j++)
+	{
+		while (num >= coins[j])
+		{
+			result++;
+			num -= coins[j];
+		}
+	}
 
-    return 0;
+	printf("%d\n", result);
+	return (0);
 }
