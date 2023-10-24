@@ -2,7 +2,7 @@
 #include <time.h>
 #include <stdio.h>
 /**
- * main - checks if the assigned number is positive or negative
+ * main - accesses if the generated random value is positive, negative or zero
  *
  * Return : 0 on success
  */
