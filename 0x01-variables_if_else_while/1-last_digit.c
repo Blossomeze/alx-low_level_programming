@@ -2,7 +2,7 @@
 #include <time.h>
 #include <stdio.h>
 /**
- * main - print whether the number stored in the variable n is positive or negative
+ * main - evaluates the last digits of the number stored in n
  *
  * Return:0 on success
  */
