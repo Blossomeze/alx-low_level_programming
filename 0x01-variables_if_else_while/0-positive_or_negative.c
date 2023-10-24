@@ -2,9 +2,9 @@
 #include <time.h>
 #include <stdio.h>
 /**
- * main - accesses if the generated random value is positive, negative or zero
+ * main - print whether the number stored in the variable n is positive or negative
  *
- * Return : 0 on success
+ * Return: 0 on success
  */
 int main(void)
 {
